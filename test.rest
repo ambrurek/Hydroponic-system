@@ -1,0 +1,69 @@
+# Registering a new user
+POST http://127.0.0.1:8000/user/register/
+Content-Type: application/json
+
+{"username": "szpak1", "password": "szpakus2", "email": "test@example.com"}
+
+###
+
+# Logging in
+POST http://127.0.0.1:8000/user/login/
+Content-Type: application/json
+
+{"username": "szpak1", "password": "szpakus2"}
+
+###
+
+# Testing the token
+GET http://127.0.0.1:8000/user/test
+Content-Type: application/json 
+Authorization: Token 
+
+###
+
+# Creating a new hydroponic system
+POST http://127.0.0.1:8000/systems/hydroponic-systems/
+Content-Type: application/json 
+Authorization: Token 
+
+{
+    "name": "test",
+    "description": "hey"
+}
+
+###
+
+# Retrieving details of a hydroponic system
+GET http://127.0.0.1:8000/systems/hydroponic-systems/1/
+Content-Type: application/json 
+Authorization: Token 
+
+###
+
+# Retrieving a list of hydroponic systems
+GET http://127.0.0.1:8000/systems/hydroponic-systems/
+Content-Type: application/json 
+Authorization: Token 
+
+###
+
+# Creating a new measurement in the system
+POST http://127.0.0.1:8000/systems/measurements/
+Content-Type: application/json 
+Authorization: Token 
+
+{
+    "system": "1",
+    "temperature_raw": "25F",
+    "ph": "00.22",
+    "tds": "122.1232"
+}
+
+###
+
+# Retrieving details of a hydroponic system with the last 5 measurements
+GET http://127.0.0.1:8000/systems/hydroponic-systems/1
+Content-Type: application/json 
+Authorization: Token 
+
+{"last_measurements":"5"}

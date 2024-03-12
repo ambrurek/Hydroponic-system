@@ -1,0 +1,10 @@
+Django==4.2.11
+django-extensions==3.2.3
+django-filter==24.1
+djangorestframework==3.14.0
+djangorestframework-jsonapi==6.1.0
+python-dotenv==1.0.0
+sqlparse==0.4.4
+psycopg2==2.9.9
+black==24.2.0 
+drf-yasg==1.21.7
