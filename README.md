@@ -3,7 +3,7 @@
 
 This project provides a RESTful API for managing hydroponic systems and measurements.
 This is my first project using Django and Django Rest  FW so there are many things that I can still improve.
-For any problems contact mi directly (ambruru)
+For any problems contact with me directly (ambrurek)
 
 ## Installation
 After cloning repository create .env file in it and copy content of env.template to it\
