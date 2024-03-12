@@ -6,6 +6,8 @@ This is my first project using Django and Django Rest  FW so there are many thin
 For any problems contact mi directly (ambruru)
 
 ## Installation
+After cloning repository create .env file in it and copy content of env.template to it\
+Its needed to correctly build up app\
 Use Docker compose to build app and all deps with postrges DB.
 App will be served on 8000 port by deafult.
 
